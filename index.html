@@ -1,7 +1,33 @@
+<!DOCTYPE html>
 <html>
 <head>
-ggg
+<title>Calculator</title>
 </head>
 <body>
+    <script>
+    function number(value){
+        document.form.result.value +=value;
+    }
+    function clear(value){
+        document.form.result.value =value;
+    }
+    function calculate(){
+        document.form.result.value = eval(document.form1.result.value);
+    }
+    </script>
+    <form name="form">
+
+		<h1>CALCULATOR</h1>
+        <input type = "text" name="result" placeholder="0" style="text-align:right"></input>
+        <button type = "button" onclick="number(value)" value="+">+</button>
+        <button type = "button" onclick="number(value)" value="-">-</button>
+        <button type = "button" onclick="calculate()">=</button>
+		<button type = "button" onclick="clear(value)">C</button>
+        </td>
+        </tr>
+
+    </form>
+     
+     
 </body>
 </html>
